@@ -1,16 +1,16 @@
 [package]
-name = "example"
+name = "rust"
 version = "0.1.0"
 authors = ["bluesky711711 <blueky711711@gmail.com>"]
 edition = "2018"
-build="build.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [lib]
-name="example"
-crate-type=["cdylib"]
+crate-type = ["cdylib"]
+name = "example"
+
+[dependencies]
+calamine = "0.16.1"
 
 [build-dependencies]
-cbindgen = "0.4"
-calamine = "0.16.1"
+cbindgen = "0.14.2"
